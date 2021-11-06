@@ -19,7 +19,7 @@ pipeline {
                 sh './jenkins/scripts/test.sh'
             }
         }
-        stage('Deliver') {
+        stage('DeliverStage') {
             steps {
                 sh './jenkins/scripts/deliver.sh'
                 input message: 'can we close website ?'
